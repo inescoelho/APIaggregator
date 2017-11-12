@@ -1,4 +1,46 @@
+:root {
+  --title-color: #6441A4;
+  --darker-orange: #C43B0A;
+}
+
 .bg { 
     /* The image used */
     background-image: url("../resources/tv.jpeg");
+}
+hr {
+    border-color:var(--title-color);
+}
+/*BUTTON*/
+.btn-customize {
+    background: var(--title-color);
+}
+.btn-customize:hover, 
+.btn-customize:focus,
+.btn-customize:active {
+    background: var(--darker-orange);
+}
+.header h1{
+    color: var(--title-color);
+}
+
+.footer {
+	background-color: var(--title-color);
+	color:white;
+}
+.footer a {
+	color: white;
+}
+//https://coolors.co/ffffff-6441a4-af9dd0-dad1ea-7e61b3
+
+.table > tbody > tr > td {
+    vertical-align: middle;
+}
+td:hover {
+    cursor: pointer;
+}
+.greenLight {
+ color: green;
+}
+.redLight{
+  color: red;
 }
