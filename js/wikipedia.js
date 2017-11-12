@@ -1,3 +1,26 @@
+function cleanResults() {
+  $("#results").empty();
+}
+
+function addMessage(value) {
+  var txt = "";
+
+  switch(value) {
+    case 0:
+        txt = "No results found.";
+        break;
+    case 1:
+        txt = "Please introduce what to search.";
+        break;
+    case 2:
+        txt = "Loading...";
+  }
+
+  cleanResults();
+  $("#results").addClass("text-center");
+  $("#results").hide().append("<h2>"+ txt +"</h2>").fadeIn(1000);
+}
+
 function searchResults () {
   var input = $("#query").val();
   console.log(input);
@@ -6,13 +29,13 @@ function searchResults () {
      getResults(input);
   }
   else {
-    $("#results").empty();
-    $("#results").addClass("text-center");
-    $("#results").hide().append("<h2>Please introduce text</h2>").fadeIn(1000);
+    addMessage(1);
   }
 }
 
 function getResults(input) {
+  addMessage(2);
+
   $.ajax({
     url: "https://en.wikipedia.org/w/api.php",
     data: {
@@ -25,14 +48,11 @@ function getResults(input) {
     success: function(data) {
       console.log(data);
       
-      //clean results on screen
-      $("#results").empty();
-      
       if (data[1].length == 0) {
-        $("#results").addClass("text-center");
-        $("#results").hide().append("<h2>No results found.</h2>").fadeIn(1000);
+        addMessage(0);
       }
       else {
+        cleanResults();
         $("#results").append("<ul class='list-unstyled' id='resultsList'></ul>");
         for (var i = 0; i < 10; i++) {
           if (typeof data[1][i] !== "undefined") {
