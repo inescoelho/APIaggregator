@@ -1,0 +1,85 @@
+:root {
+  --footer-space: 10px;
+}
+
+hr {
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 3px;
+    width: 150px;
+}
+
+/*BUTTON*/
+.btn-customize {
+    color: #ffffff;
+	height: 45px;
+	text-align: center;
+}
+.btn-customize:hover, 
+.btn-customize:focus,
+.btn-customize:active {
+    color: #ffffff;
+    box-shadow: none;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+}
+.bg { 
+    /* Full height */
+    height: 100%; 
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#mainContainer {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+#main {
+	border-radius: 5px;
+	background-color: white;
+}
+
+.header {
+	padding-top: 75px;
+	padding-bottom: 50px;
+}
+.header h1{
+    font-weight: 600;
+    font-size: 40px;
+}
+
+#content {
+	padding-bottom: 50px;
+}
+#content a {
+	padding-left: 25px;
+	padding-right: 25px;
+	margin: 10px 0 10px 0;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+.footer p {
+	margin-bottom: var(--footer-space);
+	margin-top: var(--footer-space);
+}
+
+@media (min-width: 576px) {
+	.header h1{
+	    font-size: 60px;
+	}
+	hr {
+	    width: 250px;
+	}
+}
+
+@media (min-width: 992px) {
+	.header h1{
+	    font-size: 80px;
+	}
+}

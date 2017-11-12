@@ -1,0 +1,8 @@
+.bg { 
+    /* The image used */
+    background-image: url("../resources/sky.jpeg");
+}
+
+.stuff {
+	background-color: white;
+}
