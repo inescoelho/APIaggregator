@@ -21,6 +21,12 @@ function addMessage(value) {
   $("#results").hide().append("<h2>"+ txt +"</h2>").fadeIn(1000);
 }
 
+document.getElementById('search').getElementsByTagName('input')[0].addEventListener('keypress', function(e) {
+  if(e.keyCode === 13) {
+    searchResults();
+  }
+})
+
 function searchResults () {
   var input = $("#query").val();
   console.log(input);
