@@ -25,6 +25,14 @@ hr {
     color: var(--dark-orange);
 }
 
+#content a {
+  padding-left: 25px;
+  padding-right: 25px;
+  margin: 10px 0 10px 0;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
 .footer {
 	background-color: var(--dark-orange);
 	color:white;

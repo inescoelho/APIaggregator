@@ -44,3 +44,8 @@ td:hover {
 .redLight{
   color: red;
 }
+
+td a {
+  margin:0;
+  padding:0;
+}

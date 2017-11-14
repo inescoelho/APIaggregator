@@ -1,5 +1,6 @@
 function cleanResults() {
   $("#results").empty();
+  $("#results").removeClass("text-center");
 }
 
 function addMessage(value) {

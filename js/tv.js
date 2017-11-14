@@ -17,7 +17,7 @@ $('document').ready(function() {
 function fetchChannelInformation() {
   channels.forEach(function(ch){
     let line = document.createElement('tr');
-    line.innerHTML = `<td class="text-center"></td><td class="align-middle"><b>${ch}</b></td><td class="align-middle"></td><td class="align-middle"></td>`;
+    line.innerHTML = `<td></td><td class="align-middle"><b>${ch}</b></td><td class="align-middle"></td><td class="align-middle"></td>`;
     line.setAttribute('id', `tr${ch}`);
     document.getElementsByTagName('tbody')[0].appendChild(line);
     
@@ -46,7 +46,7 @@ function addChannelInformation(name, channel) {
   
   let link = document.createElement('a');
   link.setAttribute('href', channel.url);
-  link.innerHTML=`<img src=${channel.logo} width='50' class="img-circle" target="_blank">`;
+  link.innerHTML=`<img src=${channel.logo} width='50' class="img rounded-circle mx-auto d-block" target="_blank">`;
   line.getElementsByTagName('td')[0].appendChild(link);
   
   line.getElementsByTagName('td')[2].innerHTML=`${channel.status}`;

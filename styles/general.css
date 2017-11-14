@@ -56,13 +56,6 @@ body {
 #content {
 	padding-bottom: 50px;
 }
-#content a {
-	padding-left: 25px;
-	padding-right: 25px;
-	margin: 10px 0 10px 0;
-	margin-left: 25px;
-	margin-right: 25px;
-}
 
 .footer p {
 	margin-bottom: var(--footer-space);
