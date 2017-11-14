@@ -1,4 +1,35 @@
+:root {
+  --main-color: #0e0763;
+  --darker-color: #07033f;
+}
+
+hr {
+    border-color:var(--main-color);
+}
+
 .bg { 
     /* The image used */
     background-image: url("../resources/sky.jpeg");
+}
+
+/*BUTTON*/
+.btn-customize {
+    background: var(--main-color);
+}
+.btn-customize:hover, 
+.btn-customize:focus,
+.btn-customize:active {
+    background: var(--darker-color);
+}
+
+.header h1{
+    color: var(--main-color);
+}
+
+.footer {
+	background-color: var(--main-color);
+	color:white;
+}
+.footer a {
+	color: white;
 }
