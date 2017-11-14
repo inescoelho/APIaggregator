@@ -17,7 +17,7 @@ $('document').ready(function() {
 function fetchChannelInformation() {
   channels.forEach(function(ch){
     let line = document.createElement('tr');
-    line.innerHTML = `<td></td><td class="align-middle"><b>${ch}</b></td><td class="align-middle"></td><td class="align-middle"></td>`;
+    line.innerHTML = `<td class="align-middle"></td><td class="align-middle"><b>${ch}</b></td><td class="align-middle"></td><td class="align-middle"></td>`;
     line.setAttribute('id', `tr${ch}`);
     document.getElementsByTagName('tbody')[0].appendChild(line);
     
