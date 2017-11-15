@@ -26,6 +26,12 @@ hr {
     color: var(--main-color);
 }
 
+#result {
+	padding-top: 50px;
+}
+#history {
+	padding-top: 50px;
+}
 .footer {
 	background-color: var(--main-color);
 	color:white;
